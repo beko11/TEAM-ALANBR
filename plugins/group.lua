@@ -2392,7 +2392,7 @@ local data = load_data(_config.moderation.data)
 local chat = msg.to.id
 local user = msg.from.id
 if msg.to.type ~= 'pv' then
-if matches[1] == "id" or matches[1] == "ايدي" then
+if matches[1] == "iddd" or matches[1] == "ءاءيدي" then
 if not matches[2] and not msg.reply_id then
 local function getpro(arg, data)
    if data.photos_[0] then
@@ -2850,7 +2850,7 @@ if matches[1] == "res" or matches[1] == 'معلومات' and matches[2] and is_m
       username_ = matches[2]
     }, action_by_username, {chat_id=msg.to.id,username=matches[2],cmd="res"})
   end
-if matches[1] == "معلومات حول" or matches[1] == 'معلومات حول' and matches[2] and is_mod(msg) then
+if matches[1] == "الحساب" or matches[1] == 'معلومات حول' and matches[2] and is_mod(msg) then
 tdcli_function ({
     ID = "GetUser",
     user_id_ = matches[2],
@@ -2884,7 +2884,7 @@ return "📌¦ _اوه ☢ هنالك خطأ_ 🚸\n📌¦ _عذرا لا يوج
 return "📌¦ _مرحبآ عزيزي \n📌¦ _تم حذف الادمنيه بنجاح_ ☑️"
 			end
          end
-			if matches[2] == 'filterlist' or matches[2] == 'قائمه منع الكلمات' then
+			if matches[2] == 'filterlist' or matches[2] == 'قائمه المنع' then
 				if next(data[tostring(chat)]['filterlist']) == nil then
      if not lang then
 					return "📌¦ *[Filtered words] list is empty* ☑️"
@@ -3026,7 +3026,7 @@ if matches[1] == "ownerlist" or matches[1] == 'المدراء' and is_owner(msg)
 return ownerlist(msg)
 end
 
-if matches[1] == "setlang" or matches[1] == 'ضع لغه' and is_owner(msg) then
+if matches[1] == "setlang" or matches[1] == 'اللغه' and is_owner(msg) then
    if matches[2] == "en" or matches[2] == 'انكلش' then
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -3145,21 +3145,20 @@ _Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
 *Good luck ;)*
 
 🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
+‎📌¦ قناه الـسـورس : @TEAM_ALANBR
 
 ]]
 
 elseif lang then
 
 text = [[
- 📌¦ اوامر سورس الزعيم  باللغه العربيه
+ 📌¦ اوامر سورس TEAM_ALANBR  باللغه العربيه
  
  🔹➖➖🔹➖➖🔹➖➖🔹
 
 📌¦ تفعيل | تعطيل - لتفعيل البوت او تعطيل
 
-📌¦ ضع لغه عربي | انكلش 
+📌¦ اللغه | عربي | انكلش 
 
 📌¦ رفع مطور - لرفع مطور
  
@@ -3228,8 +3227,7 @@ text = [[
 📌¦ الرابط | ضع رابط | تغير الرابط 
 
 🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
+‎📌¦ قناه الـسـورس : @TEAM_ALANBR
 
 ]]
 end
@@ -3299,9 +3297,9 @@ local lang = redis:get(hash)
      welcome = administration[arg.chat_id]['setwelcome']
       else
      if not lang then
-     welcome = "📌¦ *Welcome Dude*\n📌¦ *my chaneel : @lldev1ll"
+     welcome = "📌¦ *Welcome Dude*\n📌¦ *my chaneel : @TEAM_ALANBR"
     elseif lang then
-     welcome = "📌¦ _مرحباً عزيزي\n📌¦ نورت المجموعه \n📌¦ تابع : @lldev1ll"
+     welcome = "📌¦ _مرحباً عزيزي\n📌¦ نورت المجموعه \n📌¦ تابع : @TEAM_ALANBR"
         end
      end
  if administration[tostring(arg.chat_id)]['rules'] then
@@ -3351,9 +3349,9 @@ end
  end
 return {
 patterns ={
-"^(id)$",
+"^(iddd)$",
 "^(id) (.*)$",
-"^(ايدي)$",
+"^(ءاءيدي)$",
 "^(ايدي) (.*)$",
 "^(pin)$",
 "^(unpin)$",
@@ -3407,7 +3405,7 @@ patterns ={
 "^(ضع اسم) (.*)$",
 "^(مسح) (.*)$",
 "^(ضع تكرار) (%d+)$",
-"^(معلومات حول) (.*)$",
+"^(الحساب) (.*)$",
 "^(معلومات) (%d+)$",
 "^(ضع لغه) (.*)$",
 "^(منع) (.*)$",

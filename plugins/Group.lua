@@ -1344,10 +1344,10 @@ end
 if not lang then
 
 local settings = data[tostring(target)]["settings"] 
- text = "*📌 Group Settings:*\n📌¦ _Lock edit :_ *"..settings.lock_edit.."*\n📌¦ _Lock links :_ *"..settings.lock_link.."*\n📌¦ _Lock tags :_ *"..settings.lock_tag.."*\n📌¦ _Lock flood :_ *"..settings.flood.."*\n📌¦ _Lock spam :_ *"..settings.lock_spam.."*\n📌¦ _Lock mention :_ *"..settings.lock_mention.."*\n📌¦ _Lock arabic :_ *"..settings.lock_arabic.."*\n📌¦ _Lock webpage :_ *"..settings.lock_webpage.."*\n📌¦ _Lock markdown :_ *"..settings.lock_markdown.."*\n📌¦ _Group welcome :_ *"..settings.welcome.."*\n📌¦ _Lock pin message :_ *"..settings.lock_pin.."*\n📌¦_Bots protection :_ *"..settings.lock_bots.."*\n📌¦ _Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _Expire Date :_ *"..expire_date.."*\n📌¦ _Dev Bot_ : @TH3BOSS\n📌¦ _Bot channel_ : @llDEV1ll\n📌¦ _Group Language_ : [ _English_ ]"
+ text = "*📌 Group Settings:*\n📌¦ _Lock edit :_ *"..settings.lock_edit.."*\n📌¦ _Lock links :_ *"..settings.lock_link.."*\n📌¦ _Lock tags :_ *"..settings.lock_tag.."*\n📌¦ _Lock flood :_ *"..settings.flood.."*\n📌¦ _Lock spam :_ *"..settings.lock_spam.."*\n📌¦ _Lock mention :_ *"..settings.lock_mention.."*\n📌¦ _Lock arabic :_ *"..settings.lock_arabic.."*\n📌¦ _Lock webpage :_ *"..settings.lock_webpage.."*\n📌¦ _Lock markdown :_ *"..settings.lock_markdown.."*\n📌¦ _Group welcome :_ *"..settings.welcome.."*\n📌¦ _Lock pin message :_ *"..settings.lock_pin.."*\n📌¦_Bots protection :_ *"..settings.lock_bots.."*\n📌¦ _Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _Expire Date :_ *"..expire_date.."*\n📌¦ _Bot channel_ : @TEAM_ALANBR\n📌¦ _Group Language_ : [ _English_ ]"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "*📌اعدادات المجموعه :*\n📌¦ _قفل التعديل : _ *"..settings.lock_edit.."*\n📌¦ _قفل الروابط :_ *"..settings.lock_link.."*\n📌¦ _قفل التاك :_ *"..settings.lock_tag.."*\n📌¦ _قفل التكرار :_ *"..settings.flood.."*\n📌¦ _قفل الكلايش :_ *"..settings.lock_spam.."*\n📌¦ _قفل التذكير :_ *"..settings.lock_mention.."*\n📌¦ _قفل العربيه :_ *"..settings.lock_arabic.."*\n📌¦ _قفل الويب :_ *"..settings.lock_webpage.."*\n📌¦ _قفل الماركدوان :_ *"..settings.lock_markdown.."*\n📌¦ _الترحيب :_ *"..settings.welcome.."*\n📌¦ _قفل التثبيت :_ *"..settings.lock_pin.."*\n📌¦ _قفل البوتات :_ *"..settings.lock_bots.."*\n📌¦ _عدد التكرار :_ *"..NUM_MSG_MAX.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _تاريخ الانقضاء :_ *"..expire_date.."*\n📌¦ _مطور الـسـورس_ : @TH3BOSS\n📌¦ _قناه الـسـورس_ : @llDEV1ll\n📌¦ _اللغه المستخدمه_ : [ _عربي_ ]"
+ text = "*📌اعدادات المجموعه :*\n📌¦ _قفل التعديل : _ *"..settings.lock_edit.."*\n📌¦ _قفل الروابط :_ *"..settings.lock_link.."*\n📌¦ _قفل التاك :_ *"..settings.lock_tag.."*\n📌¦ _قفل التكرار :_ *"..settings.flood.."*\n📌¦ _قفل الكلايش :_ *"..settings.lock_spam.."*\n📌¦ _قفل التذكير :_ *"..settings.lock_mention.."*\n📌¦ _قفل العربيه :_ *"..settings.lock_arabic.."*\n📌¦ _قفل الويب :_ *"..settings.lock_webpage.."*\n📌¦ _قفل الماركدوان :_ *"..settings.lock_markdown.."*\n📌¦ _الترحيب :_ *"..settings.welcome.."*\n📌¦ _قفل التثبيت :_ *"..settings.lock_pin.."*\n📌¦ _قفل البوتات :_ *"..settings.lock_bots.."*\n📌¦ _عدد التكرار :_ *"..NUM_MSG_MAX.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _تاريخ الانقضاء :_ *"..expire_date.."*\n📌¦ _قناه الـسـورس_ : @TEAM_ALANBR\n📌¦ _اللغه المستخدمه_ : [ _عربي_ ]"
 end
 return text
 end
@@ -2377,10 +2377,10 @@ end
 end
 if not lang then
 local mutes = data[tostring(target)]["mutes"] 
- text = " *📌 Group Mute List* : \n📌¦ _Mute all : _ *"..mutes.mute_all.."*\n📌¦ _Mute gif :_ *"..mutes.mute_gif.."*\n📌¦ _Mute text :_ *"..mutes.mute_text.."*\n📌¦ _Mute inline :_ *"..mutes.mute_inline.."*\n📌¦ _Mute game :_ *"..mutes.mute_game.."*\n📌¦ _Mute photo :_ *"..mutes.mute_photo.."*\n📌¦ _Mute video :_ *"..mutes.mute_video.."*\n📌¦ _Mute audio :_ *"..mutes.mute_audio.."*\n📌¦ _Mute voice :_ *"..mutes.mute_voice.."*\n📌¦ _Mute sticker :_ *"..mutes.mute_sticker.."*\n📌¦ _Mute contact :_ *"..mutes.mute_contact.."*\n📌¦ _Mute forward :_ *"..mutes.mute_forward.."*\n📌¦ _Mute location :_ *"..mutes.mute_location.."*\n📌¦ _Mute document :_ *"..mutes.mute_document.."*\n📌¦ _Mute TgService :_ *"..mutes.mute_tgservice.."*\n📌¦ _Mute Keyboard :_ *"..mutes.mute_keyboard.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _Dev Bot_ : @TH3BOSS\n📌¦ _Bot channel_ : @llDEV1ll\n📌¦ _Group Language_ : [ _English_ ]"
+ text = " *📌 Group Mute List* : \n📌¦ _Mute all : _ *"..mutes.mute_all.."*\n📌¦ _Mute gif :_ *"..mutes.mute_gif.."*\n📌¦ _Mute text :_ *"..mutes.mute_text.."*\n📌¦ _Mute inline :_ *"..mutes.mute_inline.."*\n📌¦ _Mute game :_ *"..mutes.mute_game.."*\n📌¦ _Mute photo :_ *"..mutes.mute_photo.."*\n📌¦ _Mute video :_ *"..mutes.mute_video.."*\n📌¦ _Mute audio :_ *"..mutes.mute_audio.."*\n📌¦ _Mute voice :_ *"..mutes.mute_voice.."*\n📌¦ _Mute sticker :_ *"..mutes.mute_sticker.."*\n📌¦ _Mute contact :_ *"..mutes.mute_contact.."*\n📌¦ _Mute forward :_ *"..mutes.mute_forward.."*\n📌¦ _Mute location :_ *"..mutes.mute_location.."*\n📌¦ _Mute document :_ *"..mutes.mute_document.."*\n📌¦ _Mute TgService :_ *"..mutes.mute_tgservice.."*\n📌¦ _Mute Keyboard :_ *"..mutes.mute_keyboard.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _Bot channel_ : @TEAM_ALANBR\n📌¦ _Group Language_ : [ _English_ ]"
 else
 local mutes = data[tostring(target)]["mutes"] 
- text = " *📌 اعدادات الوسائط* : \n📌¦ _قفل المجموعه : _ *"..mutes.mute_all.."*\n📌¦ _قفل الصور المتحركه :_ *"..mutes.mute_gif.."*\n📌¦ _قفل الدردشه :_*"..mutes.mute_text.."*\n📌¦ _قفل الانلاين :_ *"..mutes.mute_inline.."*\n📌¦ _قفل الالعاب :_*"..mutes.mute_game.."*\n📌¦ _قفل الصور :_ *"..mutes.mute_photo.."*\n📌¦ _قفل الفيديوهات :_ *"..mutes.mute_video.."*\n📌¦ _قفل البصمات :_*"..mutes.mute_audio.."*\n📌¦ _قفل الصوت :_*"..mutes.mute_voice.."*\n📌¦ _قفل الملصقات :_ *"..mutes.mute_sticker.."*\n📌¦ _قفل الجهات :_ *"..mutes.mute_contact.."*\n📌¦ _قفل التوجيه :_ *"..mutes.mute_forward.."*\n📌¦ _قفل الموقع :_ *"..mutes.mute_location.."*\n📌¦ _قفل الملفات :_ *"..mutes.mute_document.."*\n📌¦ _قفل الاشعارات :_ *"..mutes.mute_tgservice.."*\n📌¦ _قفل الكيبورد :_ *"..mutes.mute_keyboard.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _مطور الـسـورس_ : @TH3BOSS\n📌¦ _قناه الـسـورس_ : @llDEV1ll\n📌¦ _اللغه المستخدمه_ : [ _عربي_ ]"
+ text = " *📌 اعدادات الوسائط* : \n📌¦ _قفل المجموعه : _ *"..mutes.mute_all.."*\n📌¦ _قفل الصور المتحركه :_ *"..mutes.mute_gif.."*\n📌¦ _قفل الدردشه :_*"..mutes.mute_text.."*\n📌¦ _قفل الانلاين :_ *"..mutes.mute_inline.."*\n📌¦ _قفل الالعاب :_*"..mutes.mute_game.."*\n📌¦ _قفل الصور :_ *"..mutes.mute_photo.."*\n📌¦ _قفل الفيديوهات :_ *"..mutes.mute_video.."*\n📌¦ _قفل البصمات :_*"..mutes.mute_audio.."*\n📌¦ _قفل الصوت :_*"..mutes.mute_voice.."*\n📌¦ _قفل الملصقات :_ *"..mutes.mute_sticker.."*\n📌¦ _قفل الجهات :_ *"..mutes.mute_contact.."*\n📌¦ _قفل التوجيه :_ *"..mutes.mute_forward.."*\n📌¦ _قفل الموقع :_ *"..mutes.mute_location.."*\n📌¦ _قفل الملفات :_ *"..mutes.mute_document.."*\n📌¦ _قفل الاشعارات :_ *"..mutes.mute_tgservice.."*\n📌¦ _قفل الكيبورد :_ *"..mutes.mute_keyboard.."*\n*🔹➖➖🔹➖➖🔹➖➖🔹*\n📌¦ _قناه الـسـورس_ : @TEAM_ALANBR\n📌¦ _اللغه المستخدمه_ : [ _عربي_ ]"
 end
 return text
 end
@@ -3145,15 +3145,14 @@ _Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
 *Good luck ;)*
 
 🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
+‎📌¦ قناه الـسـورس : @TEAM_ALANBR
 
 ]]
 
 elseif lang then
 
 text = [[
- 📌¦ اوامر سورس الزعيم  باللغه العربيه
+ 📌¦ اوامر تيم الانبار باللغه العربيه
  
  🔹➖➖🔹➖➖🔹➖➖🔹
 
@@ -3228,8 +3227,7 @@ text = [[
 📌¦ الرابط | ضع رابط | تغير الرابط 
 
 🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
+‎📌¦ قناه الـسـورس : @TEAM_ALANBR
 
 ]]
 end
@@ -3409,10 +3407,10 @@ patterns ={
 "^(ضع تكرار) (%d+)$",
 "^(معلومات حول) (.*)$",
 "^(معلومات) (%d+)$",
-"^(ضع لغه) (.*)$",
+"^(اللغه) (.*)$",
 "^(منع) (.*)$",
 "^(الغاء منع) (.*)$",
-"^(قائمه المتع)$",
+"^(قائمه المنع)$",
 "^(help)$",
 "^(الاوامر)$",
 "^(الرابط)$",

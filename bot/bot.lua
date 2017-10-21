@@ -90,21 +90,12 @@ function create_config( )
     "tools",
     "rank"
 	},
-    sudo_users = {229445008},
+    sudo_users = {244252169},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
     info_text = [[
-	》Black_Berry v5.0
-An advanced administration bot based on https://valtman.name/telegram-cli
-
-》https://github.com/breakheart371/Black_Berry 
-
-》Admins :
-》@sudo_hacker ➣ Founder & Developer《
-
-》Our channel :
-》@blackandwhiteTM《
+	》• Ᏸ๑Ꮏ ＡＬＡＮＢᏒ 🤖 \n  ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ \n  • ᗫЄᏉ Ᏸ๑Ꮏ ✔️ \n 👁‍🗨 • DeV  ┇ @D_1_T \n 👁‍🗨 • TwsL┇ @BEKO_TVBOT \n ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ \n • ḈᏂ : @TEAM_ALANBR ۦ.🎶《
 ]],
   }
 	serialize_to_file(config, './data/config.lua')

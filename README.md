@@ -1,19 +1,16 @@
-# [BlackAndWhiteTM](https://telegram.me/BlackAndWhiteTM)
+# [TEAM_ALANBR](t.me/TEAM_ALANBR)
 
-**An advanced and powerful administration bot based on NEW TG-CLI
+# BEST SOURCE ON TELEGRAM
 
 * * *
- برای نصب و ساختن ربات کد های زیر را به ترتیب در ترمینال خود وارد کنید
-# Installation
-
 ```sh
 # Let's install the bot.
-:کدهای نصب به صورت تکی
+: لتنصيب السورس
 
 cd $HOME
 
-git clone https://github.com/breakheart371/black_berry.git
-cd black_berry
+git clone https://github.com/beko11/TEAM-ALANBR.git
+cd TEAM-ALANBR
 
 chmod +x black.sh
 
@@ -32,30 +29,14 @@ screen ./auto.sh
 ### One command
 To install everything in one command, use:
 ```sh
+لتنصيب  بكود واحد :
 
-:کدهای نصب سورس بدون اتولانچ
+cd $HOME && git clone https://github.com/beko11/TEAM-ALANBR.git && cd TEAM-ALANBR && chmod +x black.sh && ./black.sh install && ./black.sh
 
-cd $HOME && git clone https://github.com/breakheart371/black_berry.git && cd black_berry && chmod +x black.sh && ./black.sh install && ./black.sh
-
-OR
-
-:کدهای نصب سورس همراه با اتولانچ
-
-cd $HOME && git clone https://github.com/breakheart371/black_berry.git && cd black_berry && chmod +x black.sh && ./black.sh install && chmod 777 auto.sh && screen ./auto.sh
 ```
 * * *
 # Support and Development
 
-More information [black & white Global Chat](https://t.me/joinchat/)
+More information [TEAM_ALANBR](https://t.me/TEAM_ALANBR)
 
 * * *
-
-# Developers!
-
-[babakkhan](https://github.com/babakkhan375) ([Telegram](https://telegram.me/sudo_hacker)) برنامه نویس
-
-### Telegram channel:
-
-[@blackandwhiteTM](https://telegram.me/BlackAndWhiteTM) کانال ما
-
-موفق باشید

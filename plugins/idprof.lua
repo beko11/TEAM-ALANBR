@@ -1,35 +1,22 @@
---[[
-############################
-#         *IDPro*          #
-#    Writed By MohammadWH  #  
-#      @GodOfDevelopers    # 
-#        Ver: 1.0          #
-#        2017/15/04        #
-#     -------------------  #
-#     Knight Channel:      #
-#                          #
-#      @Knight_Team        #
-#                          #
-############################
-]]
+
 function run(msg,matches)
 
- if matches[1] == 'myid' and msg.reply_to_message_id_ == 0  then
+ if matches[1] == 'ايدي' and msg.reply_to_message_id_ == 0  then
  if is_sudo(msg) then
-  rank = 'صاحب ربات'
+  rank = 'مطوري القميل 😍'
  elseif is_owner(msg) then
-  rank = 'صاحب گروه'
+  rank = 'مدير الكروب 🔥'
  elseif is_mod(msg) then
-  rank = 'ناظر گروه'
+  rank = 'ادمن الكروب 🌟'
  else
-  rank = 'کاربر عادی'
+  rank = 'عضو دايح 😂'
  end
 local function getpro(arg, data)
 
    if data.photos_[0] then
-            tdcli.sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, data.photos_[0].sizes_[1].photo_.persistent_id_,'\n> Your Name: '..msg.from.print_name..'\n> Your ID: '..msg.sender_user_id_..'\n> Your UserName: '..(msg.from.username or '----')..'\n> Your Phone: '..(msg.from.phone or 'I Not Have Your Phone Number!')..'\n> Your Rank: '..rank..'\n',msg.id_,msg.id_)
+            tdcli.sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, data.photos_[0].sizes_[1].photo_.persistent_id_,'\n>📌¦ ايدي حسابك: '..msg.sender_user_id_..'\n>📌¦ معرفك: @'..(msg.from.username or '----')..'\n>📌¦ رقمك :'..(msg.from.phone or 'لايوجد!')..'\n>📌¦ موقعك : '..rank..'\n',msg.id_,msg.id_)
    else
-      tdcli.sendMassage(msg.chat_id_, msg.id_, 1, "You Have'nt Profile Photo!!\n\n> *Supergroup ID:* `"..msg.chat_id_.."`\n*> Your ID:* `"..msg.sender_user_id_.."\n*> Your UserName:* `"..(msg.from.username or "----").."`\n*> Your Phone:* `"..(msg.from.phone or "I Not Have Your Phone Number!").."`\n*> Your Rank:* `"..rank.."`", 1, 'md')
+      tdcli.sendMassage(msg.chat_id_, msg.id_, 1, "📌¦ لايوجد لديك صوره !!\n\n> *📌¦ ايدي المجموعه :* `"..msg.chat_id_.."`\n*>📌¦ ايدي حسابك :* `"..msg.sender_user_id_.."\n*>📌¦ معرفك :* `@"..(msg.from.username or "----").."`\n*>📌¦ رقمك:* `"..(msg.from.phone or "لايوجد!").."`\n*>📌¦ موقعك:* `"..rank.."`", 1, 'md')
    end
    end
    tdcli_function ({
@@ -44,7 +31,7 @@ end
 
 return {
 patterns = {
-"^[/!#](myid)$",
+"^(ايدي)$",
 
 },
 run = run

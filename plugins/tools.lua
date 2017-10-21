@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 60809019 -- حط ايديك هنا <===
+local SUDO = 244252169 -- حط ايديك هنا <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -613,7 +613,7 @@ if is_sudo(msg) then
 			end
 			redis:del('ExpireDate:'..msg.to.id)
 		end
-		if matches[1]:lower() == 'gid' then
+		if matches[1]:lower() == 'ايديي' then
 			tdcli.sendMessage(msg.to.id, msg.id_, 1, '`'..msg.to.id..'`', 1,'md')
 		end
 		if matches[1] == 'غادر' and matches[2] then
@@ -1093,12 +1093,12 @@ matches[3] then
 		local send_file = 
 "./"..matches[2].."/"..matches[3]
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, send_file, '@TH3BOSS', dl_cb, nil)
+1, nil, send_file, '@TEAM_ALANBR', dl_cb, nil)
 	end
 	if matches[1]:lower() == "جلب ملف" and matches[2] then
 	    local plug = "./plugins/"..matches[2]..".lua"
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, plug, '@TH3BOSS', dl_cb, nil)
+1, nil, plug, '@TEAM_ALANBR', dl_cb, nil)
     end
   end
 
@@ -1304,7 +1304,7 @@ patterns = {
 "^(جلب ملف) (.*)$",
 "^(حفظ ملف) (.*)$",
 "^(اضافه)$",
-"^([Gg]id)$",
+"^(ايديي)$",
 "^([Cc]heck)$",
 "^([Cc]heck) (.*)$",
 "^([Cc]harge) (.*) (%d+)$",
@@ -1316,7 +1316,3 @@ patterns = {
 }, 
 run = run, pre_process = pre_process
 }
--- BY TH3BOSS
--- BY @lldev1ll
--- BY @ll60kllbot
--- BY TH3BOSS_CLI

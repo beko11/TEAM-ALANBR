@@ -1,28 +1,26 @@
 do
 
 local function run(msg, matches)
-if matches[1]=="مقام من" and is_sudo(msg) then 
-return  "شما صاحب ربات و سازنده بنده میباشید"
-elseif matches[1]=="مقام من" and is_admin(msg) then 
-return  "شما ادمین ربات و یک مقام پایین تر ازسودو میباشید"
-elseif matches[1]=="مقام من" and is_owner(msg) then 
-return  "شما سازنده و صاحب گروه میباشید"
-elseif matches[1]=="مقام من" and is_mod(msg) then 
-return  "شما کمک مدیراین گروه میباشید"
+if matches[1]=="موقعي" and is_sudo(msg) then 
+return  "📌¦ اهلا صديقي انت مطور البوت ☑️"
+elseif matches[1]=="موقعي" and is_admin(msg) then 
+return  "📌¦ اهلا صديقي انت اداري البوت"
+elseif matches[1]=="موقعي" and is_owner(msg) then 
+return  "📌¦ اهلا صديقي انت مدير الكروب "
+elseif matches[1]=="موقعي" and is_mod(msg) then 
+return  "📌¦ اهلا صديقي انت ادمن الكروب"
 else
-return  "شما هیچ مقامی ندارید"
+return  "📌¦اهلا صديقي انت مجرد عضو 💧"
 end
 
 end
 
 return {
   patterns = {
-    "^(مقام من)$",
+    "^(موقعي)$",
     },
   run = run
 }
 end
 
 
---By @sudo_hacker
--- @blackandwhiteTM

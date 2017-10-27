@@ -1,11 +1,4 @@
---[[
- __   ___________   ___     _____     __  __
-/  |  |___   ___|  / _ \   | ___ }   |  \/  |
-\_ \      | |     | | | |  | |_) }   | |\/| |
- _) |     | |     | |_| |  |  _< \   | |  | |
-|__/      |_|      \___/   |_|  \_\  |_|  |_|
- BY @TAHAJ20 DEV : TAHAJ20            
---]]
+
 
 local function get_variables_hash(msg) 
   if gp_type(msg.chat_id_) == 'chat' or gp_type(msg.chat_id_) == 'channel' then 

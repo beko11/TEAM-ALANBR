@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-token_="372561263:AAEvPVDnGkfV3D7TGm0xVwY3dtJc5v3_Drc"
+token_="332370375:AAGO8F1qvP9X0CHpM5Pcip1peqZ6QArmeRQ"
 
 function print_logo() {
 

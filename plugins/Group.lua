@@ -3026,7 +3026,7 @@ if matches[1] == "ownerlist" or matches[1] == 'المدراء' and is_owner(msg)
 return ownerlist(msg)
 end
 
-if matches[1] == "setlang" or matches[1] == 'ضع لغه' and is_owner(msg) then
+if matches[1] == "setlang" or matches[1] == 'اللغه' and is_owner(msg) then
    if matches[2] == "en" or matches[2] == 'انكلش' then
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -3228,6 +3228,7 @@ text = [[
 
 🔹➖➖🔹➖➖🔹➖➖🔹
 ‎📌¦ قناه الـسـورس : @TEAM_ALANBR
+				
 
 ]]
 end

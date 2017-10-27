@@ -3,20 +3,18 @@ do
 
 function run(msg, matches)
 local reply_id = msg['id']
-local text = '😐'
-if matches[1] == '😐' then
+local text = 'شغال'
+if matches[1] == '📌¦ اي حياتي شغال' then
     if is_sudo(msg) then
-return '😐'
+return 'يب شغال'
 end
 end 
 end
 return {
 patterns = {
-    "😐"
+    "شغال"
 },
 run = run
 }
 
 end
---By @sudo_hacker
---Channel @blackanfwhiteTM

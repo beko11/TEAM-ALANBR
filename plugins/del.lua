@@ -11,22 +11,22 @@
     tdcli.getChatHistory(naji.messages_[0].chat_id_, naji.messages_[0].id_,0 , 100, delmsg, {msgs=msgs})
 end
 local function run(msg, matches)
-    if matches[1] == 'del' and is_owner(msg) then
+    if matches[1] == 'تنظيف' and is_owner(msg) then
         if tostring(msg.to.id):match("^-100") then 
             if tonumber(matches[2]) > 1000 or tonumber(matches[2]) < 1 then
-                return  '🚫 *1000*> _تعداد پیام های قابل پاک سازی در هر دفعه_ >*1* 🚫'
+                return  '🚫 *1000*> _ 📌¦ تم تنظيف عدد من الرسائل : _ >*1 * 🚫'
             else
 				tdcli.getChatHistory(msg.to.id, msg.id,0 , 100, delmsg, {msgs=matches[2]})
-				return "`"..matches[2].." `_پیام اخیر با موفقیت پاکسازی شدند_ 🚮"
+				return "`"..matches[2].." `_ _"
             end
         else
-            return '⚠️ _این قابلیت فقط در سوپرگروه ممکن است_ ⚠️'
+            return '__'
         end
     end
 end
 return {
     patterns = {
-        '^[!#/]([Dd][Ee][Ll]) (%d*)$',
+        '^(تنظيف) (%d*)$',
     },
     run = run
 }

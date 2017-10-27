@@ -22,20 +22,20 @@ install() {
 }
 
 function print_logo() {
-	green "          ____  ____     _____"
-	green "         |  _ )|  _ \   |_   _|___ ____   __  __"
-	green "         |  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
-	green "         |____/|____/     |_|\____/\_____|_/\/\_|"
+	green "          CH : @TEAM_ALANBR"
+	green "         CH : @TEAM_ALANBR"
+	green "         CH : @TEAM_ALANBR"
+	green "         CH : @TEAM_ALANBR"
 	echo -e "\n\e[0m"
 }
 
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]=" ____  ____     _____"
-    txtlogo[2]="|  _ )|  _ \   |_   _|___ ____   __  __"
-    txtlogo[3]="|  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
-    txtlogo[4]="|____/|____/     |_|\____/\_____|_/\/\_|"
+    txtlogo[1]=" 📌¦ جاري تشغيل سورس TEAM ALANBR "
+    txtlogo[2]=" CH : @TEAM_ALANBR"
+    txtlogo[3]=" CH : @TEAM_ALANBR"
+    txtlogo[4]=" CH : @TEAM_ALANBR"
     printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -55,7 +55,7 @@ function beyondteam() {
 	white "     >>>>                       We Are Programmer                               "
 	white "     >>>>                       We Are The Best                                 "
 	red   "     >>>>                       We Are Family                                   "
-	red   "     >>>>                       @BlackAndWhiteTM                                     "
+	red   "     >>>>                       CH : @TEAM_ALANBR                                     "
 	echo -e "\e[0m"
 }
 

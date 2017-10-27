@@ -30,7 +30,3 @@ return {
     },
     run = run
 }
-
---By: @sudo_hacker
-
---Channel @blackandwhiteTM

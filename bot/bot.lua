@@ -88,20 +88,12 @@ function create_config( )
     "plugins",
     "tools",
     "rank",
-    "cleanblock",
-    "addkick"
 	},
     sudo_users = {244252169},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[
- • Ᏸ๑Ꮏ ＡＬＡＮＢᏒ 🤖ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ 
- • ᗫЄᏉ Ᏸ๑Ꮏ ✔️ 
- 👁‍🗨 • DeV  ┇ @D_1_T 
- 👁‍🗨 • TwsL┇ @BEKO_TVBOT
-ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ 
- • ḈᏂ : @TEAM_ALANBR ۦ.🎶
+    info_text = [[ \n • Ᏸ๑Ꮏ ＡＬＡＮＢᏒ \n 🤖ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ  \n • ᗫЄᏉ Ᏸ๑Ꮏ ✔️  \n 👁‍🗨 • DeV  ┇ @D_1_T  \n 👁‍🗨 • TwsL┇ @BEKO_TVBOT \n ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ  \n • ḈᏂ : @TEAM_ALANBR ۦ.🎶
 ]],
   }
 	serialize_to_file(config, './data/config.lua')

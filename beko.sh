@@ -25,7 +25,7 @@ if [ "$1" = "install" ]; then
   install
   else
 
-if [ ! -f ./libs/tgcli ]; then
+if [ ! -f ./lids/tgcli ]; then
     echo "tg not found"
     echo "Run $0 install"
     exit 1
@@ -35,7 +35,7 @@ if [ ! $token ]; then
  exit 1
  fi
    curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
-    ./libs/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
+    ./lids/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
 
 fi
 

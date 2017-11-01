@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd $HOME/TEAM-ALANBR
-token="TOKEN"
+token="443519200:AAHRxcJm58Y9HhJUe7Yx6MSDV9EclbJkmk4"
 install() {
      cd tg
   sudo add-apt-repository ppa:ubuntu-toolchain-r/test

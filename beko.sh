@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/STORM
+cd $HOME/TEAM-ALANBR
 token="TOKEN"
 install() {
      cd tg

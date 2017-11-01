@@ -25,7 +25,7 @@ if [ "$1" = "install" ]; then
   install
   else
 
-if [ ! -f ./tg/tgcli ]; then
+if [ ! -f ./libs/tgcli ]; then
     echo "tg not found"
     echo "Run $0 install"
     exit 1
@@ -35,11 +35,11 @@ if [ ! $token ]; then
  exit 1
  fi
    curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
-    ./tg/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
+    ./libs/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
 
 fi
 
-# Now All Argument Support after ./STORM.sh !
+# Now All Argument Support after ./beko.sh !
 # Arguments :
 #   #   #   #   #   #   #   #   #   #
 #  --phone/-u                           specify username (would not be asked during authorization)
@@ -69,7 +69,7 @@ fi
 #  --permanent-peer-ids                 use permanent peer ids
 #   #   #   #   #   #   #   #   #   #
 #Example To launch with second profile :
-# ./STORM.sh -p second-profile
+# ./beko.sh -p second-profile
 
 #     OR
 

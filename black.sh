@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/STORM
+cd $HOME/TEAM-ALANBR
 token="443519200:AAHRxcJm58Y9HhJUe7Yx6MSDV9EclbJkmk4"
 install() {
      cd tg
@@ -25,7 +25,7 @@ if [ "$1" = "install" ]; then
   install
   else
 
-if [ ! -f ./libs/tgcli ]; then
+if [ ! -f ./libs/tdcli ]; then
     echo "tg not found"
     echo "Run $0 install"
     exit 1
@@ -35,7 +35,7 @@ if [ ! $token ]; then
  exit 1
  fi
    curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
-    ./libs/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
+    ./libs/tdcli -s ./bot/bot.lua -p PROFILE --bot=$token
 
 fi
 

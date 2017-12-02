@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
-cd $HOME/DEVSTORM
 token_="443519200:AAHRxcJm58Y9HhJUe7Yx6MSDV9EclbJkmk4" 
+cd $HOME/TEAM-ALANBR
+
 install() {
-     cd tg
+     cd libs
   sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   sudo apt-get install g++-4.7 -y c++-4.7 -y
   sudo apt-get update
@@ -14,38 +14,29 @@ install() {
   sudo apt-get install libstdc++6 -y
   sudo apt-get install lua-lgi -y
   sudo apt-get install libnotify-dev -y
-  sudo service redis-server restart
   wget https://valtman.name/files/telegram-cli-1222
   mv telegram-cli-1222 tgcli
   chmod +x tgcli
   cd ..
   chmod +x bot
-  chmod +x tg
 }
 
 function print_logo() {
- echo -e "
-    _________   _     ___       
-/  |  |___   _|  / _ \   | _ }   |  \/  |
-\_ \      | |     | | | |  | |_) }   | |\/| |
- _) |     | |     | |_| |  |  _< \   | |  | |
-|__/      |_|      \___/   |_|  \_\  |_|  |_|
- BY @TAHAJ20 DEV : TAHAJ20            "
- echo -e " "
- echo -e " "
- echo -e " "
- echo -e " "
- echo -e " "
+ green "          ____  ____     _"
+ green "         |  _ )|  _ \   |_   _|___ ____     "
+ green "         |  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
+ green "         |____/|____/     |_|\____/\_____|_/\/\_|"
+ echo -e "\n\e[0m"
 }
 
 function logo_play() {
     declare -A txtlogo
-    seconds=" "
-    txtlogo[1]=" "
-    txtlogo[2]=" "
-    txtlogo[3]=" "
-    txtlogo[4]=" "
-    printf "\033[38;5;600m\t"
+    seconds="0.010"
+    txtlogo[1]=" ____  ____     _"
+    txtlogo[2]="|  _ )|  _ \   |_   _|___ ____     "
+    txtlogo[3]="|  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
+    txtlogo[4]="|____/|____/     |_|\____/\_____|_/\/\_|"
+    printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in seq 0 ${#txtlogo[$i]}; do
             printf "${txtlogo[$i]:$x:1}"
@@ -54,17 +45,48 @@ function logo_play() {
         printf "\n\t"
     done
     printf "\n"
+ echo -e "\e[0m"
+}
+
+function beyondteam() {
+ echo -e "\e[0m"
+ green "     >>>>                       We Are Not Attacker                             "
+ green "     >>>>                       We Are Not Alliance                             "
+ white "     >>>>                       We Are Programmer                               "
+ white "     >>>>                       We Are The Best                                 "
+ red   "     >>>>                       We Are Family                                   "
+ red   "     >>>>                       @BlackAndWhiteTM                                     "
+ echo -e "\e[0m"
+}
+
+red() {
+  printf '\e[1;31m%s\n\e[0;39;49m' "$@"
+}
+green() {
+  printf '\e[1;32m%s\n\e[0;39;49m' "$@"
+}
+white() {
+  printf '\e[1;37m%s\n\e[0;39;49m' "$@"
+}
+update() {
+ git pull
 }
 
 if [ "$1" = "install" ]; then
-  install
-  else
-
-if [ ! -f ./libs/tdcli ]; then
-    echo "tg not found"
+ print_logo
+ beyondteam
+ logo_play
+ install
+elif [ "$1" = "update" ]; then
+ logo_play
+ beyondteam
+ update
+else
+if [ ! -f ./libs/tgcli ]; then
+    echo "tgcli not found"
     echo "Run $0 install"
     exit 1
- fi
+fi
 if [ ! $token_ ]; then
 echo -e ""
 
@@ -75,27 +97,10 @@ echo -e ""
  exit 1
 
  fi
-   print_logo
-   echo -e "\033[38;5;208m"
-   echo -e "
-    _________   _     ___       
-/  |  |___   _|  / _ \   | _ }   |  \/  |
-\_ \      | |     | | | |  | |_) }   | |\/| |
- _) |     | |     | |_| |  |  _< \   | |  | |
-|__/      |_|      \___/   |_|  \_\  |_|  |_|
- BY @TAHAJ20 DEV : TAHAJ20            
-"
-   echo -e "    "
-   echo -e "   "
-   echo -e "   "
-   echo -e "     "
-   echo -e "\033[0;00m"
-   echo -e "\e[36m"
-   logo_play
-   #sudo service redis-server restart
-   #./libs/tdcli -s ./bot/bot.lua -l 1 -E $@ --bot=$token_
+ print_logo
+ TEAM-ALANBR
+ logo_play
+ #sudo service redis-server restart
 curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
-
-./libs/tdcli -s ./bot/bot.lua $@ --bot=$token_
-
+ ./libs/tgcli -s ./bot/bot.lua $@ --bot=$token_
 fi

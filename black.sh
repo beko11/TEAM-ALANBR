@@ -3,7 +3,7 @@
 cd $HOME/TEAM-ALANBR
 token="443519200:AAHRxcJm58Y9HhJUe7Yx6MSDV9EclbJkmk4"
 install() {
-     cd tg
+     cd tdcli
   sudo add-apt-repository ppa:ubuntu-toolchain-r/test
   sudo apt-get install g++-4.7 c++-4.7
   sudo apt-get update  
@@ -15,10 +15,10 @@ install() {
   sudo apt-get install tmux
   wget https://valtman.name/files/telegram-cli-1222
   mv telegram-cli-1222 tgcli
-  chmod +x tgcli
+  chmod +x tdcli
   cd ..
   chmod +x bot
-  chmod +x tg
+  chmod +x libs
 }
 
 if [ "$1" = "install" ]; then
@@ -39,7 +39,7 @@ if [ ! $token ]; then
 
 fi
 
-# Now All Argument Support after ./STORM.sh !
+# Now All Argument Support after ./black.sh !
 # Arguments :
 #   #   #   #   #   #   #   #   #   #
 #  --phone/-u                           specify username (would not be asked during authorization)

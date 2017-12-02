@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd $HOME/STORM
-token="TOKEN"
+token="443519200:AAHRxcJm58Y9HhJUe7Yx6MSDV9EclbJkmk4"
 install() {
      cd tg
   sudo add-apt-repository ppa:ubuntu-toolchain-r/test
@@ -25,7 +25,7 @@ if [ "$1" = "install" ]; then
   install
   else
 
-if [ ! -f ./tg/tgcli ]; then
+if [ ! -f ./libs/tgcli ]; then
     echo "tg not found"
     echo "Run $0 install"
     exit 1
@@ -35,7 +35,7 @@ if [ ! $token ]; then
  exit 1
  fi
    curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
-    ./tg/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
+    ./libs/tgcli -s ./bot/bot.lua -p PROFILE --bot=$token
 
 fi
 
@@ -73,4 +73,4 @@ fi
 
 #     OR
 
-# ./STORM.sh --profile second-profile
+# ./black.sh --profile second-profile
